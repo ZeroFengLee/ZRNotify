@@ -10,6 +10,14 @@ import Foundation
 
 open class ZRNotify {
 
+    public required init?(coder aDecoder: NSCoder) {
+        super.init()
+    }
+    
+    public override init() {
+        super.init()
+    }
+    
     typealias notifierIdentifier = String
     public typealias notifyType = ((Notification) -> Void)
 
