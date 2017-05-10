@@ -10,6 +10,7 @@ import Foundation
 
 public class ZRNotify {
     
+    public init() {}
     typealias notifierIdentifier = String
     public typealias notifyType = ((Notification) -> Void)
 

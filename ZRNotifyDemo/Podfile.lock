@@ -1,12 +1,12 @@
 PODS:
-  - ZRNotify (0.0.2)
+  - ZRNotify (0.0.4)
 
 DEPENDENCIES:
-  - ZRNotify (~> 0.0.2)
+  - ZRNotify (~> 0.0.4)
 
 SPEC CHECKSUMS:
-  ZRNotify: 964ab3805c524713e57616a41e5ac2ecb9ab949d
+  ZRNotify: ed0d7cab8eb8392cbc3ddfe6d8ff145e6d6bc4ec
 
-PODFILE CHECKSUM: cb793916da0a8001d4ee773e1287cce0f9e28746
+PODFILE CHECKSUM: 32a51b8a27b5bcc819049e3f91d256dab784caff
 
 COCOAPODS: 1.2.0

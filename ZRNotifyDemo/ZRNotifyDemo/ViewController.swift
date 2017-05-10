@@ -11,18 +11,18 @@ import ZRNotify
 
 class ViewController: UIViewController {
 
-//    lazy var zrNotify: ZRNotify = {
-//        var zrnotify = ZRNotify()
-//        zrnotify.on("ScheduleA", notify: { notify in
-//            
-//        }).on("ScheduleB", notify: { notify in
-//            
-//        }).on("ScheduleC", notify: { notify in
-//            
-//        })
-//        
-//        return zrnotify
-//    }()
+    lazy var zrNotify: ZRNotify = {
+        var zrnotify = ZRNotify()
+        zrnotify.on("ScheduleA", notify: { notify in
+            
+        }).on("ScheduleB", notify: { notify in
+            
+        }).on("ScheduleC", notify: { notify in
+            
+        })
+        
+        return zrnotify
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
