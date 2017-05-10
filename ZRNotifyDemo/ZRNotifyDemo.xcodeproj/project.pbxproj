@@ -124,7 +124,7 @@
 					C0DBCDD41EC3083700A53C7A = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 4K4Q9JA95Y;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -340,6 +340,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zero.ZRNotifyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c7c58d42-98fe-4aa5-a417-eed7ac8a1dda";
+				PROVISIONING_PROFILE_SPECIFIER = "oudmon band wild develop";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -349,7 +351,7 @@
 			baseConfigurationReference = 86427CD937CDCB61F14D222D /* Pods-ZRNotifyDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4K4Q9JA95Y;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZRNotifyDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zero.ZRNotifyDemo;
@@ -377,6 +379,7 @@
 				C0DBCDE91EC3083700A53C7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
