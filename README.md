@@ -4,7 +4,7 @@
 
 ## pod方式安装
 
-	`pod 'ZRNotify', '~> 0.0.5'`
+`pod 'ZRNotify', '~> 0.0.5'`
 
 ## 使用
 
@@ -52,11 +52,12 @@ override func viewDidLoad() {
     zrNotify.opStatusForAll(true)
     zrNotifys.opStatusForAll(true)
     
-    NotificationCenter.default.post(name: Notification.Name(rawValue: "ScheduleA"), object: "hello ScheduleA")
+    // 测试
+    NotificationCenter.default.post(name: Notification.Name(rawValue: "ScheduleA"), object: "hello ScheduleA")
     NotificationCenter.default.post(name: Notification.Name(rawValue: "ScheduleB"), object: nil)
     NotificationCenter.default.post(name: Notification.Name(rawValue: "ScheduleC"), object: "hello ScheduleC")
     
-    
+    // 测试
     NotificationCenter.default.post(name: Notification.Name(rawValue: "Schedule1"), object: "hello Schedule1")
     NotificationCenter.default.post(name: Notification.Name(rawValue: "Schedule2"), object: nil)
     NotificationCenter.default.post(name: Notification.Name(rawValue: "Schedule3"), object: "hello Schedule3")
