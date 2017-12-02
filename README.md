@@ -43,7 +43,7 @@ let notify = ZRNotify()
 ```
 
 start observer
-> there are two ways to observer
+> there are two ways to observer，you can use one of them according to the actual situation
 
 way 01: Separate Observer
 
