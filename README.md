@@ -1,5 +1,6 @@
 # ZRNotify
-
+![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)
+[![CocoaPods](http://img.shields.io/cocoapods/v/Then.svg)](https://cocoapods.org/pods/ZRNotify)
 	使用一种简洁的方式组织通知的代码逻辑
 
 ## pod方式安装
