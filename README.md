@@ -4,62 +4,73 @@
 	
 ✨ZRNotify is a new way of dealing with Notification，more simpler and more convenient
 
-## 使用
 
-> 分开监测
+## Bad Way
 
-```swift
-lazy var zrNotify: ZRNotify = {
-    var zrnotify = ZRNotify()
-    zrnotify.on("ScheduleA", notify: { notify in
-        
-        print(notify.object ?? "nil object")
-    }).on("ScheduleB", notify: { notify in
-        
-        print(notify.object ?? "nil object")
-    }).on("ScheduleC", notify: { notify in
-        
-        print(notify.object ?? "nil object")
-    })
-    
-    return zrnotify
- }()
-```
+observer notification
 
-> 统一处理监测结果
+```swfit
+NotificationCenter.default.addObserver(self, selector: #selector(acceptNotify), name: NSNotification.Name(rawValue: "NotifyName"), object: nil)
 
-```swift
-lazy var zrNotifys: ZRNotify = {
-    var zrnotify = ZRNotify()
-    zrnotify.ons(["Schedule1", "Schedule2", "Schedule3"], notify: { notify in
-        
-        print(notify.object ?? "nil object")
-    })
-    
-    return zrnotify
-}()
-```
-
-> 初始化通知接收
-
-```swift
-override func viewDidLoad() {
-    super.viewDidLoad()
-    
-    // 初始化
-    zrNotify.opStatusForAll(true)
-    zrNotifys.opStatusForAll(true)
-    
-    // 测试
-    NotificationCenter.default.post(name: Notification.Name(rawValue: "ScheduleA"), object: "hello ScheduleA")
-    NotificationCenter.default.post(name: Notification.Name(rawValue: "ScheduleB"), object: nil)
-    NotificationCenter.default.post(name: Notification.Name(rawValue: "ScheduleC"), object: "hello ScheduleC")
-    
-    // 测试
-    NotificationCenter.default.post(name: Notification.Name(rawValue: "Schedule1"), object: "hello Schedule1")
-    NotificationCenter.default.post(name: Notification.Name(rawValue: "Schedule2"), object: nil)
-    NotificationCenter.default.post(name: Notification.Name(rawValue: "Schedule3"), object: "hello Schedule3")
+func acceptNotify(notify: Notification) {
+   print(notify)
 }
+```
+
+post notification
+```swfit
+NotificationCenter.default.post(name: Notification.Name(rawValue: "NotifyName"), object: "hello")
+```
+
+## ZRNotify Way
+
+```swfit
+ZRNotify().on("NotifyName", notify: { notify in  
+   print(notify.object)
+})
+```
+
+post notification
+```swfit
+NotificationCenter.default.post(name: Notification.Name(rawValue: "NotifyName"), object: "hello")
+```
+## Advanced Usage
+
+Initialize ZRNotify
+
+```swift
+let notify = ZRNotify()
+```
+
+start observer
+> there are two ways to observer
+
+way 01: Separate Observer
+
+```swift
+notify.on("ScheduleA", notify: { notify in
+
+    print(notify.object)
+}).on("ScheduleB", notify: { notify in
+
+    print(notify.object)
+})
+```
+
+way 02: Unified Observer
+
+```swift
+zrnotify.ons(["ScheduleA", "ScheduleB"], notify: { notify in
+        
+    print(notify.object)
+})
+```
+
+post notification
+
+```swfit
+NotificationCenter.default.post(name: Notification.Name(rawValue: "ScheduleA"), object: "hello A")
+NotificationCenter.default.post(name: Notification.Name(rawValue: "ScheduleB"), object: "hello B")
 ```
 
 ## Installation
