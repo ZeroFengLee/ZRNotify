@@ -60,7 +60,7 @@ notify.on("ScheduleA", notify: { notify in
 way 02: Unified Observer
 
 ```swift
-zrnotify.ons(["ScheduleA", "ScheduleB"], notify: { notify in
+notify.ons(["ScheduleA", "ScheduleB"], notify: { notify in
         
     print(notify.object)
 })
