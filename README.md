@@ -1,4 +1,5 @@
 # ZRNotify
+![build](https://travis-ci.org/ZeroFengLee/ZRNotify.svg?branch=master)
 ![Swift](https://img.shields.io/badge/Swift-4.0-orange.svg)
 [![CocoaPods](http://img.shields.io/cocoapods/v/Then.svg)](https://cocoapods.org/pods/ZRNotify)
 	
