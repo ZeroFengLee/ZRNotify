@@ -6,7 +6,7 @@ branches:
 
 xcode_project: NotifyDemo.xcodeproj
 xcode_scheme: NotifyDemoTests
-osx_image: xcode8
+osx_image: xcode9
 xcode_sdk: iphonesimulator10.0
 
 script:
