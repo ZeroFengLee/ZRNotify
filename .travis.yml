@@ -10,4 +10,4 @@ osx_image: xcode8
 xcode_sdk: iphonesimulator10.0
 
 script:
-  - xcodebuild test -project NotifyDemo.xcodeproj -scheme "NotifyDemo iOS" -destination "platform=iOS Simulator,name=iPhone 6s"
+  - xcodebuild test -project NotifyDemo.xcodeproj -scheme "NotifyDemo" -destination "platform=iOS Simulator,name=iPhone 6s"
