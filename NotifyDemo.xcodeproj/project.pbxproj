@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C03B64F21FD667D800D93CAA /* ZRNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = C03B64F11FD667D800D93CAA /* ZRNotify.swift */; };
 		C0F600ED1FD642B2006C242A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600EC1FD642B2006C242A /* AppDelegate.swift */; };
 		C0F600EF1FD642B2006C242A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F600EE1FD642B2006C242A /* ViewController.swift */; };
 		C0F600F21FD642B2006C242A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F600F01FD642B2006C242A /* Main.storyboard */; };
 		C0F600F41FD642B2006C242A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0F600F31FD642B2006C242A /* Assets.xcassets */; };
 		C0F600F71FD642B2006C242A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0F600F51FD642B2006C242A /* LaunchScreen.storyboard */; };
 		C0F601021FD642B3006C242A /* NotifyDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F601011FD642B3006C242A /* NotifyDemoTests.swift */; };
-		C0F6010E1FD6436F006C242A /* ZRNotify.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0F6010D1FD6436F006C242A /* ZRNotify.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C03B64F11FD667D800D93CAA /* ZRNotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRNotify.swift; sourceTree = "<group>"; };
 		C0F600E91FD642B2006C242A /* NotifyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotifyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F600EC1FD642B2006C242A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C0F600EE1FD642B2006C242A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,7 +38,6 @@
 		C0F600FD1FD642B3006C242A /* NotifyDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotifyDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0F601011FD642B3006C242A /* NotifyDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotifyDemoTests.swift; sourceTree = "<group>"; };
 		C0F601031FD642B3006C242A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C0F6010D1FD6436F006C242A /* ZRNotify.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZRNotify.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C03B64F01FD667D800D93CAA /* ZRNotify */ = {
+			isa = PBXGroup;
+			children = (
+				C03B64F11FD667D800D93CAA /* ZRNotify.swift */,
+			);
+			path = ZRNotify;
+			sourceTree = SOURCE_ROOT;
+		};
 		C0F600E01FD642B2006C242A = {
 			isa = PBXGroup;
 			children = (
@@ -79,7 +87,7 @@
 		C0F600EB1FD642B2006C242A /* NotifyDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C0F6010C1FD6436F006C242A /* ZRNotify */,
+				C03B64F01FD667D800D93CAA /* ZRNotify */,
 				C0F600EC1FD642B2006C242A /* AppDelegate.swift */,
 				C0F600EE1FD642B2006C242A /* ViewController.swift */,
 				C0F600F01FD642B2006C242A /* Main.storyboard */,
@@ -97,15 +105,6 @@
 				C0F601031FD642B3006C242A /* Info.plist */,
 			);
 			path = NotifyDemoTests;
-			sourceTree = "<group>";
-		};
-		C0F6010C1FD6436F006C242A /* ZRNotify */ = {
-			isa = PBXGroup;
-			children = (
-				C0F6010D1FD6436F006C242A /* ZRNotify.swift */,
-			);
-			name = ZRNotify;
-			path = ../../ZRNotify;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,7 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C0F600EF1FD642B2006C242A /* ViewController.swift in Sources */,
-				C0F6010E1FD6436F006C242A /* ZRNotify.swift in Sources */,
+				C03B64F21FD667D800D93CAA /* ZRNotify.swift in Sources */,
 				C0F600ED1FD642B2006C242A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
